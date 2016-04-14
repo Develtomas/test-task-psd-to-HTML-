@@ -58,7 +58,7 @@ body {
 
 .sandwich {
     display: inline-block;
-    background: url('/images/spr.png') no-repeat;
+    background: url('../images/spr.png') no-repeat;
     overflow: hidden;
     text-indent: -9999px;
     text-align: left;
