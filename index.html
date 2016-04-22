@@ -19,227 +19,233 @@
 </head>
 
 <body>
-    <br>
     <!--Main navbar-->
-    <div class="container">
-        <div class="row">
-            <nav class="navbar navbar-default" style="border-bottom: solid 3px #da4453;
-               border-radius: 3px;
-               border-right: none;
-               border-left: none;
-               border-top: none;
-               background-color:#ed5565;
-               margin-bottom: 30px">
-               <!--First Navbar button-->
-                <div id="logo-btn" class="navbar-brand dropdown dropdown-toggle" type="button" data-toggle="dropdown">
-                    <div class="sandwich"></div>
+    <div class="container head-contain">
+        <div class="row max-width">
+            <nav class="navbar navbar-default navbar-custom">
+                <!--First Navbar button-->
+                <div class="navbar-brand dropdown dropdown-toggle logo-btn" type="button" data-toggle="dropdown">
+                    <div class="sprburger"></div>
                 </div>
                 <!--Dropdown menu-->
-                <ul class="dropdown-menu opsa-li-14">
-                    <li><a class="wht" id="dm" href="#">Первый пункт меню</a></li>
-                    <li><a class="wht" id="dm" href="#">Активный пункт меню</a></li>
-                    <li><a class="wht" id="dm" href="#">Пункт меню</a></li>
-                    <li><a class="wht" id="dm" href="#">Пункт меню</a></li>
+                <ul class="dropdown-menu opsa-li-14 dropdown-custom wht">
+                    <li><a href="#">Первый пункт меню</a></li>
+                    <li><a href="#">Активный пункт меню</a></li>
+                    <li><a href="#">Пункт меню</a></li>
+                    <li><a href="#">Пункт меню</a></li>
                 </ul>
                 <!-- Brand and main menu in mobile display -->
                 <div class="navbar-header">
-                    <button id="second-button" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#col1" aria-expanded="false">
-                        <span id="second-button" class="sr-only">Toggle navigation</span>
-                        <span id="second-button" class="icon-bar"></span>
-                        <span id="second-button" class="icon-bar"></span>
-                        <span id="second-button" class="icon-bar"></span>
+                    <button type="button" class="navbar-toggle collapsed second-button" data-toggle="collapse" data-target="#col1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
                     </button>
                 </div>
                 <!-- Main menu -->
-                <div class="collapse navbar-collapse" id="col1">
-                    <ul class="nav navbar-nav opsa-li-16">
-                        <li><a class="right-border wht" href="#">Главная</a></li>
-                        <li><a class="right-border wht" href="#">О нас</a></li>
-                        <li><a class="right-border wht" href="#">Сервис</a></li>
-                        <li><a class="right-border wht" href="#">Портфолио</a></li>
-                        <li><a class="right-border wht" href="#">Контакты</a></li>
+                <div class="collapse navbar-collapse nav-col" id="col1"> <!--ID relates with data-target-->
+                    <ul class="nav navbar-nav opsa-li-16 wht">
+                        <li><a class="right-border" href="#">Главная</a></li>
+                        <li><a class="right-border" href="#">О нас</a></li>
+                        <li><a class="right-border" href="#">Сервис</a></li>
+                        <li><a class="right-border" href="#">Портфолио</a></li>
+                        <li><a class="right-border" href="#">Контакты</a></li>
                     </ul>
                     <!-- Search form -->
-                    <form class="navbar-form navbar-right hidden-sm" id="head-search">
+                    <form class="navbar-form navbar-right search-form">
                         <div class="input-group stylish-input-group">
                             <input type="text" class="form-control opsa-re-12" placeholder="Поиск по сайту" value="">
                             <span class="input-group-addon">
                                 <button class="submit">
-                                    <i class="glyphicon glyphicon-search"></i>
+                                    <i class="sprlens"></i>
                                 </button>
                             </span>
                         </div>
                     </form>
-                </div> <!--Navbar collapse-->
+                </div><!--Navbar collapse-->
             </nav>
         </div>
-    </div> <!--entire navbar-->
+    </div><!--entire navbar-->
     <!--Block with new post and login form-->
     <div class="container">
-        <div class="row">
-           <!--Latest posts-->
-            <div id="news-form" class="col-xs-12 col-md-5 pull-left">
-                <div id="divid" class="pull-right hidden-xs hidden-sm col-md-1"></div><!-- divider-column -->
+        <div class="row  max-width">
+            <!--Latest posts-->
+            <div class="pull-left news-form col-xs-12 col-md-4">
+                <div class="pull-right hidden-xs hidden-sm col-md-1 divid"></div><!-- divider-column -->
                 <!-- head -->
-                <div id="head-cont" class="container col-xs-12 col-md-11">
-                    <h4 class="redd ptsa-nw-23">Новости</h4>
+                <div class="container head-cont col-xs-12 col-md-11">
+                    <h4>Новости</h4>
                 </div>
                 <!-- container -->
-                <div id="med-cont" class="container col-xs-12 col-md-11">
+                <div class="container med-cont col-xs-12 col-md-11">
                     <div class="media-left">
                         <a href="#">
-                            <img class="media-object" src="http://placehold.it/90x90" alt="#">
+                            <img class="media-object" src="http://placehold.it/80x80" alt="#">
                         </a>
                     </div>
                     <div class="media-body">
-                        <h5 class="media-heading redd opsa-re-14">Ему, безопасную по всей подзаголовок.</h5><span class="gre">Каждый охотник желает знать. Языкового первой запятой, сих?</span>
+                        <h5 class="media-heading"><a href="">Ему, безопасную по всей подзаголовок.</a></h5>
+                        <p class="media-descr">Каждый охотник желает знать. Языкового первой запятой, сих?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, neque aliquid id dignissimos, sit aperiam iure ab asperiores maiores deleniti iusto expedita! Numquam eveniet possimus, accusantium magni voluptatum, aut minus.сих?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, neque aliquid id dignissimos, sit aperiam iure ab asperiores maiores deleniti iusto expedita! Numquam eveniet possimus, accusantium magni voluptatum,сих?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, neque aliquid id dignissimos, sit aperiam iure ab asperiores maiores deleniti iusto expedita! Numquam eveniet possimus, accusantium magni voluptatum.
+                        </p>
                     </div>
                     <hr>
                     <div class="media-left">
                         <a href="#">
-                            <img class="media-object" src="http://placehold.it/90x90" alt="#">
+                            <img class="media-object" src="http://placehold.it/80x80" alt="#">
                         </a>
                     </div>
                     <div class="media-body">
-                        <h5 class="media-heading redd opsa-re-14">Ему, безопасную по всей подзаголовок.</h5><span class="gre">Каждый охотник желает знать. Языкового первой запятой, сих?</span>
+                        <h5 class="media-heading"><a href="">Ему, безопасную по всей подзаголовок.</a></h5>
+                        <p class="media-descr">Каждый охотник желает знать. Языкового первой запятой, сих?
+                        </p>
                     </div>
                     <hr>
                     <div class="media-left">
                         <a href="#">
-                            <img class="media-object" src="http://placehold.it/90x90" alt="#">
+                            <img class="media-object" src="http://placehold.it/80x80" alt="#">
                         </a>
                     </div>
                     <div class="media-body">
-                        <h5 class="media-heading redd opsa-re-14">Ему, безопасную по всей подзаголовок.</h5><span class="gre">Каждый охотник желает знать. Языкового первой запятой, сих?</span>
+                        <h5 class="media-heading"><a href="">Ему, безопасную по всей подзаголовок.</a></h5>
+                        <p class="media-descr">Каждый охотник желает знать. Языкового первой запятой, сих?</p>
                     </div>
-                </div> <!-- container end -->
+                </div><!-- container end -->
             </div>
             <!-- login block -->
-            <div id="reg-form" class="col-xs-12 col-md-7 pull-right">
+            <div class="reg-form col-xs-12 col-md-8 pull-right">
                 <!-- login form-->
-                <div class="container col-xs-12 col-md-6">
-                    <h4 class="redd ptsa-nw-23">Вход</h4>
-                    <p class="gre">Далеко-далеко за словесными горами, в стране гласных и прочего бреда живут рыбные тексты, очень рыбные тексты</p>
+                <div class="container pad-20 col-xs-12 col-md-7">
+                    <h4>Вход</h4>
+                    <p>Далеко-далеко за словесными горами, в стране гласных и прочего бреда живут рыбные тексты.</p>
                     <form class="form-horizontal">
-                        <p class="help-block opsa-li-13">Логин</p>
-                        <input type="text" class="form-control input-lg opsa-re-12" placeholder="Иван" value="">
-                        <p class="help-block opsa-li-13">Пароль</p>
-                        <input type="password" class="form-control input-lg" value="">
-                        <div class="checkbox">
-                            <label>
-                                <input id="cb" type="checkbox">
-                                <p class="help-block" style="font-family:'OpenSansRegular';">Запомнить меня</p>
-                            </label>
-                        </div>
+                        <p class="help-block">Логин</p>
+                        <input type="text" class="form-control input-lg opsa-re-12 inp-form" placeholder="Иван" value="">
+                        <p class="help-block">Пароль</p>
+                        <input type="password" class="form-control input-lg inp-form" value="">
+                        <!--checkbox-->
+                        <input type="checkbox" id="checkbox-id">
+                        <label for="checkbox-id" class="topMarg">
+                            <p class="cb-font">запомнить меня</p>
+                        </label>
                         <div class="enter_btn">
-                            <button id="red-btn" type="submit" class="btn btn-lg ar-12-bold">ВХОД</button>
+                            <button type="submit" class="btn red-btn btn-lg ar-12-bold">ВХОД</button>
                         </div>
                     </form>
                 </div>
                 <!-- login via social net -->
-                <div id="rght-bt-cont" class="container col-xs-12 col-md-6">
-                    <h4 class="redd ptsa-nw-23">Вход через соц сети</h4>
-                    <p style="margin-bottom: 25px;" class="gre">Далеко-далеко за словесными горами, в стране гласных и прочего бреда живут рыбные тексты</p>
-                    <div class="enter_btn">
+                <div class="container col-xs-12 col-md-5">
+                    <h4>Вход через соц сети</h4>
+                    <p>Далеко-далеко за словесными горами, в стране гласных и прочего бреда</p>
+                    <div class="social-block">
                         <div class="my_btn btn-group">
-                            <button id="faceb-lg" class="btn-aut-big btn">
+                            <button class="btn-aut-big btn faceb-lg">
                                 Войти через Facebook
                             </button>
-                            <button id="faceb-sm" class="btn-aut-sm btn">
+                            <button class="btn-aut-sm btn faceb-sm">
                                 <i class="fa fa-facebook"></i>
                             </button>
                         </div>
                         <div class="my_btn btn-group">
-                            <button id="twit-lg" class="btn btn-aut-big">
+                            <button class="btn btn-aut-big twit-lg">
                                 Войти через Twitter
                             </button>
-                            <button id="twit-sm" class="btn-aut-sm btn">
+                            <button class="btn-aut-sm btn twit-sm">
                                 <i class="fa fa-twitter"></i>
                             </button>
                         </div>
                         <div class="my_btn btn-group">
-                            <button id="googl-lg" class="btn btn-aut-big">
+                            <button class="btn btn-aut-big googl-lg">
                                 Войти через Google
                             </button>
-                            <button id="googl-sm" class="btn-aut-sm btn">
+                            <button class="btn-aut-sm btn googl-sm">
                                 <i class="fa fa-google-plus"></i>
                             </button>
                         </div>
-                    </div> <!-- button container-->
-                </div> <!--end social reg-->
-            </div> <!-- end regist form-->
-        </div> <!-- row -->
-    </div> <!-- news+registr container -->
+                    </div><!-- button container-->
+                </div><!--end social reg-->
+            </div><!-- end regist form-->
+        </div><!-- row -->
+    </div><!-- news+registr container -->
     <!-- some block -->
     <div class="container">
-        <div class="row">
+        <div class="row  max-width">
             <div class="block col-xs-12">
-                <button class="close" type="button" style="margin-top: 13px;"><!-- close button-->
-                    <i class="fa fa-close"></i>
+                <button class="close btn-cls" type="button">
+                    <!-- close button-->
+                    <i class="sprcls"></i>
                 </button>
-                <h4 class="redd ptsa-nw-23">Некий заголовок какого-то блока</h4>
-                <p class="gre" style="font-size: 14px;">Далеко-далеко за словесными горами в стране.Неопытный верстальщик оценивает время <span class="redd">верстки макета в днях, опытный</span> — в часах. Происходит это из-за того, что в верстке нужно много экспериментировать. C которыми Вы никогда не сталкивались ни на практике, ни в теории, то нужно хорошо подумать, прежде чем соглашаться на такой срок, это еще пол беды, а отказ от разработки после согласия.
+                <h4>Некий заголовок какого-то блока</h4>
+                <p class="font-size-14">Далеко-далеко за словесными горами в стране.Неопытный верстальщик оценивает время <span class="redd">верстки макета в днях, опытный</span> — в часах. Происходит это из-за того, что в верстке нужно много экспериментировать. C которыми Вы никогда не сталкивались ни на практике, ни в теории, то нужно хорошо подумать, прежде чем соглашаться на такой срок, это еще пол беды, а отказ от разработки после согласия.
                 </p>
-                <button id="agr" class="two btn btn-lg ar-12-bold">Согласен</button>
-                <button id="canc" class="two btn btn-lg ar-12-bold">Отмена</button>
+                <button class="two btn btn-lg ar-12-bold agr">Согласен</button>
+                <button class="two btn btn-lg ar-12-bold canc">Отмена</button>
             </div>
         </div>
     </div><!-- some block end-->
     <!-- footer -->
-    <div class="container">
-        <div id="foot2" class="row">
-            <div id="foot1" class="col-xs-12 col-md-3"><!-- left block -->
-                <h3 class="ptsa-nw-23">О нас</h3>
-                <p class="gre">Происходит это из-за того, что в верстке нужно много. C которыми ни в теории, то нужно хорошо подумать, прежде чем соглашаться на такой срок, это еще пол беды, а отказ от разработки после согласия.</p>
+    <div class="container static-bottom">
+        <div class="row max-width foot2">
+            <div class="col-xs-12 col-md-3 foot1">
+                <!-- left block -->
+                <h3>О нас</h3>
+                <p>Происходит это из-за того, что в верстке нужно много. C которыми ни в теории, то нужно хорошо подумать, прежде чем соглашаться на такой срок, это еще пол беды, а отказ от разработки после согласия.</p>
             </div>
-            <div id="foot3" class="col-xs-12 col-md-9"><!-- right block -->
-                <div class="col-xs-6 col-md-3">
-                    <ul class="list-unstyled wht opsa-re-12">
-                        <li class="gre opsa-re-14">Первый пункт
-                            <li>
-                                <li><a href="#">Далеко-далеко</a></li>
-                                <li><a href="#">Рыбным</a></li>
-                                <li><a href="#">Повстречался</a></li>
-                                <li><a href="#">Решила</a></li>
-                                <li><a href="#">Страна</a></li>
-                    </ul>
+            <div class="col-xs-12 col-md-9 foot3">
+                <!-- right block -->
+                <div class="col-xs-12 col-md-6 no-padd">
+                    <div class="col-xs-6 no-padd">
+                        <ul class="list-unstyled wht opsa-re-12">
+                            <li class="opsa-re-14 col-name">Первый пункт
+                            </li>
+                            <li><a href="#">Далеко-далеко</a></li>
+                            <li><a href="#">Рыбным</a></li>
+                            <li><a href="#">Повстречался</a></li>
+                            <li><a href="#">Решила</a></li>
+                            <li><a href="#">Страна</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 no-padd">
+                        <ul class="list-unstyled wht opsa-re-12">
+                            <li class="opsa-re-14 col-name">Категории
+                            </li>
+                            <li><a href="#">Далеко-далеко</a></li>
+                            <li><a href="#">Рыбным</a></li>
+                            <li><a href="#">Повстречался</a></li>
+                            <li><a href="#">Решила</a></li>
+                            <li><a href="#">Страна</a></li>
+                            <li><a href="#">Страна</a></li>
+                            <li><a href="#">Страна</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-xs-6 col-md-3">
-                    <ul class="list-unstyled wht opsa-re-12">
-                        <li class="gre opsa-re-14">Категории
-                            <li>
-                                <li><a href="#">Далеко-далеко</a></li>
-                                <li><a href="#">Рыбным</a></li>
-                                <li><a href="#">Повстречался</a></li>
-                                <li><a href="#">Решила</a></li>
-                                <li><a href="#">Страна</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <ul class="list-unstyled wht opsa-re-12">
-                        <li class="gre opsa-re-14">Ещё меню
-                            <li>
-                                <li><a href="#">Далеко-далеко</a></li>
-                                <li><a href="#">Рыбным</a></li>
-                                <li><a href="#">Повстречался</a></li>
-                                <li><a href="#">Решила</a></li>
-                                <li><a href="#">Страна</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <ul class="list-unstyled wht opsa-re-12">
-                        <li class="gre opsa-re-14">И еще пункт
-                            <li>
-                                <li><a href="#">Далеко-далеко</a></li>
-                                <li><a href="#">Рыбным</a></li>
-                                <li><a href="#">Повстречался</a></li>
-                                <li><a href="#">Решила</a></li>
-                                <li><a href="#">Страна</a></li>
-                    </ul>
+                <div class="col-xs-12 col-md-6 no-padd">
+                    <div class="col-xs-6 no-padd">
+                        <ul class="list-unstyled wht opsa-re-12">
+                            <li class="opsa-re-14 col-name">Ещё меню
+                            </li>
+                            <li><a href="#">Далеко-далеко</a></li>
+                            <li><a href="#">Рыбным</a></li>
+                            <li><a href="#">Повстречался</a></li>
+                            <li><a href="#">Решила</a></li>
+                            <li><a href="#">Страна</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 no-padd">
+                        <ul class="list-unstyled wht opsa-re-12">
+                            <li class="opsa-re-14 col-name">И еще пункт
+                            </li>
+                            <li><a href="#">Далеко-далеко</a></li>
+                            <li><a href="#">Рыбным</a></li>
+                            <li><a href="#">Повстречался</a></li>
+                            <li><a href="#">Решила</a></li>
+                            <li><a href="#">Страна</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div><!-- right block end -->
-        </div>
-    </div> <!-- footer end-->
+        </div><!--end row-->
+    </div><!-- footer end-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

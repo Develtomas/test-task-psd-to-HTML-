@@ -2552,7 +2552,7 @@ output {
   display: block;
   width: 100%;
   height: 34px;
-  padding: 6px 12px;
+  padding: 6px 10px;/*padding has been modified to 10px*/
   font-size: 14px;
   line-height: 1.42857143;
   color: #555;
@@ -3036,7 +3036,7 @@ select[multiple].input-lg {
 .btn:hover,
 .btn:focus,
 .btn.focus {
-  color: #333;
+  color: #ffffff;/*was #333*/
   text-decoration: none;
 }
 .btn:active,
@@ -4102,9 +4102,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #fff;
   background-color: #337ab7;
 }
-.nav-stacked > li {
-  float: none;
-}
+
 .nav-stacked > li + li {
   margin-top: 2px;
   margin-left: 0;
@@ -4276,7 +4274,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  height: 50px;
+  height: 60px;
   padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;
@@ -4349,10 +4347,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-nav .open .dropdown-menu > li > a {
     line-height: 20px;
   }
-  .navbar-nav .open .dropdown-menu > li > a:hover,
-  .navbar-nav .open .dropdown-menu > li > a:focus {
-    background-image: none;
-  }
+
 }
 @media (min-width: 768px) {
   .navbar-nav {
@@ -4438,7 +4433,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar-form {
-    width: auto;
+    width: 25%; /*corrected to 25%*/
     padding-top: 0;
     padding-bottom: 0;
     margin-right: 0;
@@ -5207,9 +5202,9 @@ a.thumbnail.active {
   overflow: hidden;
   zoom: 1;
 }
-.media-body {
+/*.media-body {
   width: 10000px;
-}
+}*/
 .media-object {
   display: block;
 }
@@ -5222,13 +5217,13 @@ a.thumbnail.active {
 }
 .media-left,
 .media > .pull-left {
-  padding-right: 10px;
+  padding-right: 18px; /*changed to 18px*/
 }
 .media-left,
 .media-right,
 .media-body {
   display: table-cell;
-  vertical-align: top;
+  vertical-align: middle; /*was top*/
 }
 .media-middle {
   vertical-align: middle;
@@ -6758,3 +6753,4 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+/*bootstr++*/
